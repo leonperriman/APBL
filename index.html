@@ -7,103 +7,52 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <script src="../js/bootstrap.bundle.min.js"></script>
   </head>
-  <body style="background-color: rgb(45, 45, 45); color: white">
-    <nav class="navbar navbar-expand-lg bg-primary-subtle">
-      <div class="container-fluid">
-        <div class="navbar-brand">Escupitara Salada - APBL</div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
-                Inicio
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Ejemplos
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="examples/fraccion_de_un_numero.html">
-                    Fraccion de un numero
-                  </a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Lecciones Interactivas
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="interactive/sumas_y_restas_basicas/home.html">
-                    Matematicas - Sumas y Restas 6 Años
-                  </a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-              </ul>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="download/docs.html">
-                  Descargas
-                </a>
-              </li>
-            </li>
-          </ul>
+  <body style="background-color: rgb(45, 45, 45)">
+    <form class="form" style="text-align: center">
+      <!--<h3 style="color: white; font-family: 'Courier New', Courier, monospace;">Login</h3>-->
+      <br />
+      <p id="txt2" style="color: white">Usuario:</p>
+      <input type="search" id="txtCorreo" list="listaGente" />
+      <p id="txt" style="color: white">Contraseña:</p>
+      <input id="txtContrasenna" type="password" style="margin-bottom: 10px" />
+      <br />
+      <br />
+      <input id="btnIngresar" type="button" value="Confirmar" />
+    </form>
+
+    <!-- Modal Error login-->
+    <div
+      class="modal fade"
+      id="modal-error"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Error</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="mensaje-error">Prueba</div>
+          </div>
         </div>
       </div>
-    </nav>
-    <br />
-    <div style="text-align: center">
-      <img src="img/logo.jpg" style="width: 500px" />
-      <br />
-      <br />
-      <p>
-        Bienvenido, esta web pertenece a la Escupitera Salada y se ha creado con
-        el fin de que los niños aprendan matematicas, lengua etc y que ademas
-        aprendan a usar un dispositivo movil o tablet
-        <br />
-        En esta pagina tenemos desde explicaciones paso a paso hasta lecciones
-        interactivas.
-        <br />
-        Tenemos explicaciones para niños de 10 / 11 años.
-        <br />
-        Tenemos lecciones interactivas para los mas pequeños y los mas mayores
-        (Hasta 11 años)
-        <br />
-        <br />
-        ¡Gracias por visitar nuestra web!
-      </p>
     </div>
-    <a
-      class="position-absolute"
-      style="bottom: 50px; right: 50px"
-      href="https://docs.google.com/forms/d/e/1FAIpQLSe5dUFz2eIoqE4xu3ct4OWeWwW-f4ZSud1Xc48EIfu8_We02Q/viewform">
-      Informar sobre un error
-    </a>
+    <div class="position-absolute" style="right: 50px; bottom: 50px">
+      <p style="color: white">¿No tienes cuenta?</p>
+      <a href="home.html">Continuar sin iniciar sesion</a>
+      <br />
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSe0IkC90FErV6g11RlcVz1PL1gCa0wFit4jXn72kkw9dFJhhg/viewform">
+        Crea una cuenta
+      </a>
+    </div>
+    <script src="db.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
