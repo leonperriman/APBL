@@ -14,8 +14,11 @@
 //         { email: 'dcv@escupiteraoficial.es', password: 'SinEspecificar'},
 
 window.UsuariosEscupi = {
+  "creast@escupiteraoficial.es": {
+    password: "ESCUPITERASALADA2024",
+  },
   "abv@escupiteraoficial.es": {
-    password: "SinEspecificar",
+    password: "bbssab",
     comportamiento: {
       semana_1: {
         L: 2,
