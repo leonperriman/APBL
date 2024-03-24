@@ -27,8 +27,8 @@ function validarCredencialesFacil(correo, password) {
 }
 
 function ingresarFacil(correo) {
-  if (correo === "leonperriman@escupiteraoficial.es") {
-    window.location.href = "admin.html";
+  if (correo === "info@escupiteraoficial.es") {
+    window.location.href = "home.html";
   } else {
     window.location.href = "home.html";
     alert("Sesión iniciada correctamente");
